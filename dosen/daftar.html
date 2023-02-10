@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/daftar.css">
+    <title>Dashboard Dosen</title>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="img/logo.png">
+                    <h2>ABSENSI <span class="primary">UDINUS</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html">
+                    <span class="material-symbols-outlined">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">schedule</span>
+                    <h3>Jadwal</h3>
+                </a>
+                <a href="index.html">
+                    <span class="material-symbols-outlined">collections_bookmark</span>
+                    <h3>Tugas</h3>
+                </a>
+                <a href="daftar.html" class="active">
+                    <span class="material-symbols-outlined">edit_square</span>
+                    <h3>Daftar Absensi</h3>
+                </a>
+                <a href="laporan.html">
+                    <span class="material-symbols-outlined">visibility</span>
+                    <h3>Laporan Absensi</h3>
+                </a>
+                <a href="rekap.html">
+                    <span class="material-symbols-outlined">dataset</span>
+                    <h3>Rekap Absensi</h3>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">logout</span>
+                    <h3>Log Out</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- AKHIRAN ASIDE -->
+        <main>
+            <h1>Dashboard Dosen</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <h1 class="pt">Daftar Absensi</h1>
+            <h1 id="dates"></h1>
+
+            
+            <div class="recent">
+                <h2>Siswa Izin Hari Ini</h2>
+                <div class="selected">
+                    <select name="class" id="class">
+                      <option>Pilih Kelas</option>
+                      <option value="4113">A11-4113</option>
+                      <option value="4112">A11-4112</option>
+                      <option value="4111">A11-4111</option>
+                    </select>
+                </div>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Kelompok</th>
+                            <th>Keterangan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ricky Primayuda Putra</td>
+                            <td>A11-4113</td>
+                            <td class="primary">SAKIT</td>
+                        </tr>
+                        <tr>
+                            <td>Aria Putra Andika</td>
+                            <td>A11-4113</td>
+                            <td class="primary">IZIN</td>
+                        </tr>
+                        <tr>
+                            <td>Ivan Putra Pratama</td>
+                            <td>A11-4113</td>
+                            <td class="primary">SAKIT</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="recent">
+                <h2>Siswa Terlambat Absen Hari Ini</h2>
+                <div class="selected">
+                    <select name="class" id="class">
+                      <option>Pilih Kelas</option>
+                      <option value="4113">A11-4113</option>
+                      <option value="4112">A11-4112</option>
+                      <option value="4111">A11-4111</option>
+                    </select>
+                </div>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Kelompok</th>
+                            <th>Terlambat</th>
+                            <th>AKSI</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ricky Primayuda Putra</td>
+                            <td>A11-4113</td>
+                            <td>2 Menit</td>
+                            <td><button class="btn-absen">Terima</button> <b>/</b> <button class="btn-absen">TIDAK</button></td>
+                        </tr>
+                        <tr>
+                            <td>Aria Putra Andika</td>
+                            <td>A11-4113</td>
+                            <td>10 Menit</td>
+                            <td><button class="btn-absen">Terima</button> <b>/</b> <button class="btn-absen">TIDAK</button></td>
+                        </tr>
+                        <tr>
+                            <td>Ivan Putra Pratama</td>
+                            <td>A11-4113</td>
+                            <td>40 Menit</td>
+                            <td><button class="btn-absen">Terima</button> <b>/</b> <button class="btn-absen">TIDAK</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="recent">
+                <h2>Siswa Tidak Absen Hari Ini</h2>
+                <div class="selected">
+                    <select name="class" id="class">
+                      <option>Pilih Kelas</option>
+                      <option value="4113">A11-4113</option>
+                      <option value="4112">A11-4112</option>
+                      <option value="4111">A11-4111</option>
+                    </select>
+                </div>
+                <br>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Kelompok</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ricky Primayuda Putra</td>
+                            <td>A11-4113</td>
+                        </tr>
+                        <tr>
+                            <td>Aria Putra Andika</td>
+                            <td>A11-4113</td>
+                        </tr>
+                        <tr>
+                            <td>Ivan Putra Pratama</td>
+                            <td>A11-4113</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="recent">
+                <h2>CEK ABSENSI</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Mata Kuliah</th>
+                            <th>Kelompok</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dasar Pemrograman</td>
+                            <td>A11-4113</td>
+                            <td><a href="laporan.html">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dasar Pemrograman</td>
+                            <td>A11-4112</td>
+                            <td><a href="laporan.html">Details</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dasar Pemrograman</td>
+                            <td>A11-4111</td>
+                            <td><a href="laporan.html">Details</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+        <!-- Akhiran Main -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                     <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-symbols-outlined active">light_mode</span>
+                    <span class="material-symbols-outlined">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Halo, <b>Suprayogi, M. Kom</b></p>
+                        <small class="text-muted">DOSEN</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/admin.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- AKHIRAN TOP -->
+            
+            <!-- AKHIRAN UPDATE TERBARU -->
+        </div>
+    </div>
+
+    <footer>
+        <p id="date"></p>
+    </footer>
+
+    
+    <script src="js/index.js"></script>
+
+</body>
+</html>
