@@ -34,6 +34,7 @@
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
     --box-shadow: 0 2rem 3rem var(--color-light);
+    --color-info-light: #363949;
 }
 
 *{
@@ -363,11 +364,28 @@ main .recent h2{
 main .recent table{
     background: var(--color-white);
     width: 130%;
-    border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     text-align: center;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    border-collapse: collapse;
+}
+
+
+th {
+    background-color: #181a1e;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: var(--color-info-light);
 }
 
 main .recent table:hover {
@@ -582,6 +600,7 @@ main .recent a{
     .container{
         width: 100%;
         grid-template-columns: 1fr;
+        overflow: hidden;
     }
 
     aside{
@@ -635,14 +654,16 @@ main .recent a{
         grid-template-columns: 1fr;
     }
 
+
     main .recent table{
         width: 100%;
-        margin: 0;
+        align-items: center;
+        margin: -1rem;
+        padding: 8px;
     }
 
     .right{
-        width: 94%;
-        margin: 0 auto 4rem;
+        margin: 0 auto 1rem;
     }
 
     .right .top{

@@ -34,6 +34,7 @@
     --color-dark: #edeffd;
     --color-dark-variant: #a3bdcc;
     --box-shadow: 0 2rem 3rem var(--color-light);
+    --color-info-light: #363949;
 }
 
 *{
@@ -363,11 +364,28 @@ main .recent h2{
 main .recent table{
     background: var(--color-white);
     width: 100%;
-    border-radius: var(--card-border-radius);
     padding: var(--card-padding);
     text-align: center;
     box-shadow: var(--box-shadow);
     transition: all 300ms ease;
+    border-collapse: collapse;
+}
+
+
+th {
+    background-color: #181a1e;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+
+tr:nth-child(even) {
+  background-color: var(--color-info-light);
 }
 
 main .recent table:hover {
@@ -764,4 +782,54 @@ button:hover {
         top: 50%;
         transform: translate(-50%, -50%) scale(14);
     }
+}
+
+
+select{
+    -webkit-appearance: none ;
+    -moz-appearance: none ;
+    -ms-appearance: none ;
+    appearance:none ;
+    outline: 0;
+    box-shadow: none;
+    border: 0!important;
+    background: var(--color-info-light);
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color: #000;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Poppins', sans-serif;
+}
+
+select::-ms-expand{
+    display: none;
+}
+
+.selected{
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: var(--color-primary);
+    overflow: hidden;
+    border-radius: .25em;
+}
+
+.selected::after{
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    cursor: pointer;
+    background: #9a9cab;
+    pointer-events: none;
+    transition: .25 all ease;
+}
+
+.selected:hover::after{
+    color: var(--color-info-dark);
 }
