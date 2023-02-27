@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/daftar.css">
-    <title>Dashboard Dosen</title>
+    <title>ABSENSIKU</title>
 </head>
 <body>
     <div class="container">
@@ -36,13 +36,9 @@
                     <span class="material-symbols-outlined">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="index.html">
+                <a href="jadwal.html" class="active">
                     <span class="material-symbols-outlined">schedule</span>
                     <h3>Jadwal</h3>
-                </a>
-                <a href="tugas.html"  class="active">
-                    <span class="material-symbols-outlined">collections_bookmark</span>
-                    <h3>Tugas</h3>
                 </a>
                 <a href="daftar.html">
                     <span class="material-symbols-outlined">edit_square</span>
@@ -56,6 +52,10 @@
                     <span class="material-symbols-outlined">dataset</span>
                     <h3>Rekap Absensi</h3>
                 </a>
+                <a href="pengganti.html">
+                    <span class="material-symbols-outlined">add_business</span>
+                    <h3>Tambah Kelas Pengganti</h3>
+                </a>
                 <a href="#">
                     <span class="material-symbols-outlined">logout</span>
                     <h3>Log Out</h3>
@@ -66,63 +66,73 @@
         <main>
             <h1>Dashboard Dosen</h1>
 
-            <div class="date">
-                <input type="date">
-            </div>
-
-            <h1 class="pt">Tugas</h1>
-
-            
+        
             <div class="recent">
-                <h1>Dasar Pemrograman</h1>
-                <h2>Laporan Tugas</h2>
-                <div class="selected">
-                    <select name="class" id="class">
-                      <option>Pilih Kelas</option>
-                      <option value="4113">A11-4113</option>
-                      <option value="4112">A11-4112</option>
-                      <option value="4111">A11-4111</option>
-                    </select>
-                </div>
-                <br>
+                <h2>Jadwal Mengajar yang akan datang</h2>
                 <table>
                     <thead>
                         <tr>
                             <th>NO.</th>
-                            <th>Nama</th>
+                            <th>Mata Kuliah</th>
+                            <th>RUANGAN</th>
                             <th>Kelompok</th>
-                            <th>Tugas</th>
-                            <th>File</th>
+                            <th>HARI</th>
+                            <th>JAM</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>1.</td>
-                            <td>Ricky Primayuda Putra</td>
+                            <td>Dasar Pemrograman</td>
+                            <td>H.47</td>
                             <td>A11-4113</td>
-                            <td>Program Array</td>
-                            <td>array.pdf</td>
+                            <td>SELASA</td>
+                            <td class="success">15.15-17.15</td>
                         </tr>
                         <tr>
                             <td>2.</td>
-                            <td>Aria Putra Andika</td>
+                            <td>Dasar Pemrograman</td>
+                            <td>H.47</td>
                             <td>A11-4113</td>
-                            <td>Program Array</td>
-                            <td>array.pdf</td>
+                            <td>SELASA</td>
+                            <td class="success">15.15-17.15</td>
                         </tr>
                         <tr>
                             <td>3.</td>
-                            <td>Ivan Putra Pratama</td>
+                            <td>Dasar Pemrograman</td>
+                            <td>H.47</td>
                             <td>A11-4113</td>
-                            <td>Program Array</td>
-                            <td>array.pdf</td>
+                            <td>SELASA</td>
+                            <td class="success">15.15-17.15</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Dasar Pemrograman</td>
+                            <td>H.47</td>
+                            <td>A11-4113</td>
+                            <td>SELASA</td>
+                            <td class="success">15.15-17.15</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Dasar Pemrograman</td>
+                            <td>H.47</td>
+                            <td>A11-4113</td>
+                            <td>SELASA</td>
+                            <td class="success">15.15-17.15</td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Dasar Pemrograman</td>
+                            <td>H.47</td>
+                            <td>A11-4113</td>
+                            <td>SELASA</td>
+                            <td class="success">15.15-17.15</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-            <br><br><br><br><br><br>
         </main>
-        
         <!-- Akhiran Main -->
 
         <div class="right">
@@ -145,8 +155,6 @@
                 </div>
             </div>
             <!-- AKHIRAN TOP -->
-            
-            <!-- AKHIRAN UPDATE TERBARU -->
         </div>
     </div>
 
@@ -154,7 +162,6 @@
         <p id="date"></p>
     </footer>
 
-    
     <script src="js/index.js"></script>
 
 </body>

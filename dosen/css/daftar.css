@@ -363,7 +363,7 @@ main .recent h2{
 
 main .recent table{
     background: var(--color-white);
-    width: 130%;
+    width: 100%;
     padding: var(--card-padding);
     text-align: center;
     box-shadow: var(--box-shadow);
@@ -576,7 +576,7 @@ main .recent a{
     }
 
     main .recent table{
-        width: 83vw;
+        width: 38vw;
     }
 
     /* main table thead tr th:last-child,
@@ -591,7 +591,7 @@ main .recent a{
         position: static;
         display: block;
         width: 100%;
-        margin-bottom: 40px;
+
         text-align: center;
     }
 }
@@ -600,7 +600,7 @@ main .recent a{
     .container{
         width: 100%;
         grid-template-columns: 1fr;
-        overflow: hidden;
+        overflow: auto;
     }
 
     aside{
@@ -651,19 +651,21 @@ main .recent a{
         position: relative;
         margin: 3rem 0 0 0;
         width: 100%;
-        grid-template-columns: 1fr;
     }
-
 
     main .recent table{
         width: 100%;
-        align-items: center;
-        margin: -1rem;
-        padding: 8px;
+        margin: 0;
+        overflow: auto;
+    }
+    .tuable{
+        width: 100%;
+        overflow: auto;
     }
 
     .right{
-        margin: 0 auto 1rem;
+        width: 94%;
+        margin: 0 auto 4rem;
     }
 
     .right .top{
@@ -703,6 +705,11 @@ main .recent a{
         font-size: 2rem;
     }
 
+    .popup{
+        align-items: center;
+        text-align: center;
+        display: inline-block;
+    }
   
 
 }
@@ -788,6 +795,7 @@ button:hover {
     }
 }
 
+
 select{
     -webkit-appearance: none ;
     -moz-appearance: none ;
@@ -837,27 +845,38 @@ select::-ms-expand{
     color: var(--color-info-dark);
 }
 
-.btn-download {
-    padding: 1px 2px;
-    border: 2px solid var(--color-dark-variant);
-    color: var(--color-dark-variant);
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: .3s ease;
-    position: relative;
-    background: transparent;
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4); 
+  justify-content: center;
+  padding: 0 30px 30px;
 }
-.btn-download::before {
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--color-dark-variant);
-    top: -100%;
-    left: 50%;
-    transform: translate(-50%, 0) scale(1);
+
+.popup-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }

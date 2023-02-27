@@ -22,7 +22,6 @@ themeToggler.addEventListener('click', () => {
 })
 
 
-
 var date = new Date();
 var tahun = date.getFullYear();
 var bulan = date.getMonth();
@@ -55,25 +54,6 @@ switch(bulan) {
  case 11: bulan = "Desember"; break;
 }
 var tampilTanggal = "© " + hari + ", " + tanggal + " " + bulan + " " + tahun + " | ABSENSI UDINUS | All Right Reserved";
-var tampilWaktu = "" + hari + ", " + tanggal + " " + bulan + " " + tahun + "";
+var tampilWaktu = "Jam: " + jam + ":" + menit + ":" + detik;
 
 document.getElementById("date").innerHTML = tampilTanggal;
-
-//POPUP
-var popup = document.getElementById("popup");
-var popupButton = document.getElementById("popup-button");
-var close = document.getElementsByClassName("close")[0];
-
-popupButton.onclick = function() {
-  popup.style.display = "block";
-}
-
-close.onclick = function() {
-  popup.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-}

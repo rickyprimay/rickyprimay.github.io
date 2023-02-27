@@ -37,11 +37,11 @@
                     <span class="material-symbols-outlined">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
-                <a href="dosen.html" class="active">
+                <a href="dosen.html" class="">
                    <span class="material-symbols-outlined">person</span>
                     <h3>Dosen</h3>
                 </a>
-                <a href="mhs.html">
+                <a href="mhs.html" class="active">
                     <span class="material-symbols-outlined">groups</span>
                     <h3>Mahasiswa</h3>
                 </a>
@@ -69,11 +69,22 @@
         </aside>
         <!-- AKHIRAN ASIDE -->
         <main>
-            <h1>Daftar Dosen</h1>
+            <h1>Daftar Mahasiswa</h1>
 
         
             <div class="recent">
-                <h2>Program Studi</h2>
+                <h2>Kelas</h2>
+                 <div class="selected">
+                    <select name="class" id="class">
+                      <option>Pilih Kelas</option>
+                      <option value="4113">A11-4113</option>
+                      <option value="4112">A11-4112</option>
+                      <option value="4111">A11-4111</option>
+                    </select>
+                </div>
+
+                <br>
+
                 <div class="selected">
                     <select name="class" id="class">
                       <option>Pilih Program Studi</option>
@@ -82,10 +93,6 @@
                       <option value="ti">Teknik Informatika</option>
                     </select>
                 </div>
-
-                <br>
-
-
 
                 <br>
 
@@ -110,8 +117,9 @@
                             <th>NO.</th>
                             <th>Foto</th>
                             <th>NAMA</th>
-                            <th>Matkul</th>
-
+                            <th>NIM</th>
+                            <th>Kelompok</th>
+                            <th>Angkatan</th>
                             <th>AKSI</th>
                         </tr>
                     </thead>
@@ -119,22 +127,28 @@
                         <tr>
                             <td>1.</td>
                             <td><img src="img/admin.png" style="width: 70px;"></td>
-                            <td>Suprayogi M.Kom</td>
-                            <td>Dasar Pemrograman, Algoritma Pemrograman</td>
+                            <td>Ricky Primayuda Putra</td>
+                            <td>A11.2022.14486</td>
+                            <td>A11-4113</td>
+                            <td>2022/2023</td>
                             <td><button><span class="material-symbols-outlined">edit</span></button><button><span class="material-symbols-outlined">delete</span></button></td>
                         </tr>
                         <tr>
                             <td>2.</td>
                             <td><img src="img/admin.png" style="width: 70px;"></td>
-                            <td>Suprayogi M.Kom</td>
-                            <td>Dasar Pemrograman, Algoritma Pemrograman</td>
+                            <td>Ivan Putra Pratama</td>
+                            <td>A11.2022.14498</td>
+                            <td>A11-4113</td>
+                            <td>2022/2023</td>
                             <td><button><span class="material-symbols-outlined">edit</span></button><button><span class="material-symbols-outlined">delete</span></button></td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td><img src="img/admin.png" style="width: 70px;"></td>
-                            <td>Suprayogi M.Kom</td>
-                            <td>Dasar Pemrograman, Algoritma Pemrograman</td>
+                            <td>Aria Putra Andika</td>
+                            <td>A11.2022.14484</td>
+                            <td>A11-4113</td>
+                            <td>2022/2023</td>
                             <td><button><span class="material-symbols-outlined">edit</span></button><button><span class="material-symbols-outlined">delete</span></button></td>
                         </tr>
                     </tbody>
