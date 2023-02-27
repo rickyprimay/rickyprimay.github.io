@@ -45,7 +45,7 @@
                     <span class="material-symbols-outlined">groups</span>
                     <h3>Mahasiswa</h3>
                 </a>
-                <a href="kelompok.html" class="active">
+                <a href="kelompok.html">
                     <span class="material-symbols-outlined">add_business</span>
                     <h3>Tambah Kelompok</h3>
                 </a>
@@ -53,7 +53,7 @@
                     <span class="material-symbols-outlined">school</span>
                     <h3>Program Studi</h3>
                 </a>
-                <a href="jadwal.html">
+                <a href="jadwal.html" class="active">
                     <span class="material-symbols-outlined">schedule</span>
                     <h3>Jadwal</h3>
                 </a>
@@ -69,11 +69,20 @@
         </aside>
         <!-- AKHIRAN ASIDE -->
         <main>
-            <h1>Daftar Kelompok</h1>
+            <h1>Daftar Jadwal</h1>
 
         
             <div class="recent">
                 <h2>Kelompok</h2>
+
+                 <div class="selected">
+                    <select name="class" id="class">
+                      <option>Pilih Kelas</option>
+                      <option value="4113">A11-4113</option>
+                      <option value="4112">A11-4112</option>
+                      <option value="4111">A11-4111</option>
+                    </select>
+                </div>
 
                 <br>
 
@@ -83,6 +92,17 @@
                       <option value="ti">Teknik Informatika</option>
                       <option value="ti">Teknik Informatika</option>
                       <option value="ti">Teknik Informatika</option>
+                    </select>
+                </div>
+
+                <br>
+
+                <div class="selected">
+                    <select name="class" id="class">
+                      <option>Pilih Mata Kuliah</option>
+                      <option value="dp">Dasar Pemrograman</option>
+                      <option value="dp">Dasar Pemrograman</option>
+                      <option value="dp">Dasar Pemrograman</option>
                     </select>
                 </div>
 
@@ -108,7 +128,10 @@
                         <tr>
                             <th>NO.</th>
                             <th>Kelompok</th>
-                            <th>Program Studi</th>
+                            <th>Prodi</th>
+                            <th>Matkul</th>
+                            <th>JAM 1</th>
+                            <th>JAM 2</th>
                             <th>AKSI</th>
                         </tr>
                     </thead>
@@ -117,18 +140,27 @@
                             <td>1.</td>
                             <td>A11-4113</td>
                             <td>Teknik Informatika</td>
+                            <td>Dasar Pemrograman</td>
+                            <td class="success">15.15-17.15</td>
+                            <td class="danger">15.15-17.15</td>
                             <td><button><span class="material-symbols-outlined">edit</span></button><button><span class="material-symbols-outlined">delete</span></button></td>
                         </tr>
                         <tr>
                             <td>2.</td>
                             <td>A11-4113</td>
                             <td>Teknik Informatika</td>
+                            <td>Dasar Pemrograman</td>
+                            <td class="success">15.15-17.15</td>
+                            <td class="danger">15.15-17.15</td>
                             <td><button><span class="material-symbols-outlined">edit</span></button><button><span class="material-symbols-outlined">delete</span></button></td>
                         </tr>
                         <tr>
                             <td>3.</td>
                             <td>A11-4113</td>
                             <td>Teknik Informatika</td>
+                            <td>Dasar Pemrograman</td>
+                            <td class="success">15.15-17.15</td>
+                            <td class="danger">15.15-17.15</td>
                             <td><button><span class="material-symbols-outlined">edit</span></button><button><span class="material-symbols-outlined">delete</span></button></td>
                         </tr>
                     </tbody>
