@@ -710,7 +710,9 @@ main .recent a{
         text-align: center;
         display: inline-block;
     }
-  
+    footer{
+        position: fixed;
+    }
 
 }
 

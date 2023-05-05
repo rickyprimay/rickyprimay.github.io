@@ -710,7 +710,7 @@ footer p{
 }
 
 button {
-    padding: 10px 24px;
+    padding: 8px 16px;
     border: 2px solid var(--color-primary);
     color: var(--color-primary);
     font-weight: 700;

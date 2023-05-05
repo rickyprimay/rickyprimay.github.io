@@ -21,7 +21,6 @@ themeToggler.addEventListener('click', () => {
     themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
 })
 
-
 var date = new Date();
 var tahun = date.getFullYear();
 var bulan = date.getMonth();
